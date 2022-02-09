@@ -52,6 +52,15 @@ const QuestionAnimated = () => (
         box-shadow: 0px 5px 19px rgba(42, 43, 104, 0.2);
         border-radius: 69px;
       }
+
+      .question label {
+        font-family: Work Sans;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 105.3%;
+        color: #6231EC;
+      }
     `}</style>
   </>
 );
