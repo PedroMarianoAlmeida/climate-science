@@ -5,17 +5,17 @@ const QuestionAnimated = () => (
         Which of the below statements about electricity is not true?
       </h6>
 
-      <div>
+      <div className="question">
         <input type="checkbox" />
         <label>Electricity is measured in units called watts</label>
       </div>
 
-      <div>
+      <div className="question">
         <input type="checkbox" />
         <label>Electricity flows at the speed of light</label>
       </div>
 
-      <div>
+      <div className="question">
         <input type="checkbox" />
         <label>Electricity is a primary energy source</label>
       </div>
@@ -39,6 +39,18 @@ const QuestionAnimated = () => (
         text-align: center;
         width: 330px;
         height: 38px;
+      }
+
+      .question {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 15px;
+        width: 427px;
+        height: 69.44px;
+        box-shadow: 0px 5px 19px rgba(42, 43, 104, 0.2);
+        border-radius: 69px;
       }
     `}</style>
   </>
