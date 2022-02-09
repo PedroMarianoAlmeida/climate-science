@@ -4,20 +4,21 @@ const QuestionAnimated = () => (
       <h6 id="title">
         Which of the below statements about electricity is not true?
       </h6>
+      <div id="question-wrapper">
+        <div className="question">
+          <input type="checkbox" />
+          <label>Electricity is measured in units called watts</label>
+        </div>
 
-      <div className="question">
-        <input type="checkbox" />
-        <label>Electricity is measured in units called watts</label>
-      </div>
+        <div className="question">
+          <input type="checkbox" />
+          <label>Electricity flows at the speed of light</label>
+        </div>
 
-      <div className="question">
-        <input type="checkbox" />
-        <label>Electricity flows at the speed of light</label>
-      </div>
-
-      <div className="question">
-        <input type="checkbox" />
-        <label>Electricity is a primary energy source</label>
+        <div className="question">
+          <input type="checkbox" />
+          <label>Electricity is a primary energy source</label>
+        </div>
       </div>
     </div>
     <style jsx>{`
@@ -59,7 +60,30 @@ const QuestionAnimated = () => (
         font-weight: 500;
         font-size: 18px;
         line-height: 105.3%;
-        color: #6231EC;
+        color: #6231ec;
+      }
+
+      #question-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        backgroundcolor: red;
+        witdh: 100%;
+
+        animation-name: myAnimation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes myAnimation {
+        from {
+          height: 500px;
+        }
+
+        to {
+          height: 200px;
+        }
       }
     `}</style>
   </>
