@@ -26,13 +26,16 @@ const QuestionAnimated = () => (
         width: 500px;
         height: 351px;
         border: 0.5px solid #6231ec;
-        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        //filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 74px;
         overflow-y: hidden;
         font-family: Work Sans;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
-      #title {        
+      #title {
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
@@ -40,7 +43,7 @@ const QuestionAnimated = () => (
         color: #818181;
         text-align: center;
         width: 330px;
-        height: 38px;
+        margin: 25px 0 18px 0;
       }
 
       .question {
@@ -56,7 +59,6 @@ const QuestionAnimated = () => (
       }
 
       .question label {
-      
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
