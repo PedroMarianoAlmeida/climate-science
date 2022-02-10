@@ -29,10 +29,10 @@ const QuestionAnimated = () => (
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 74px;
         overflow-y: hidden;
+        font-family: Work Sans;
       }
 
-      #title {
-        font-family: Work Sans;
+      #title {        
         font-style: normal;
         font-weight: 600;
         font-size: 20px;
@@ -56,7 +56,7 @@ const QuestionAnimated = () => (
       }
 
       .question label {
-        font-family: Work Sans;
+      
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
