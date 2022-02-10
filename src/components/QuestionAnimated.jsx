@@ -7,17 +7,17 @@ const QuestionAnimated = () => (
 
       <div id="question-wrapper">
         <div className="question">
-          <input type="checkbox" />
+          <span className="checkbox" />
           <label>Electricity is measured in units called watts</label>
         </div>
 
         <div className="question">
-          <input type="checkbox" />
+          <span className="checkbox" />
           <label>Electricity flows at the speed of light</label>
         </div>
 
         <div className="question">
-          <input type="checkbox" />
+          <span className="checkbox" />
           <label>Electricity is a primary energy source</label>
         </div>
       </div>
@@ -62,6 +62,14 @@ const QuestionAnimated = () => (
         animation-name: myAnimation;
         animation-duration: 2s;
         animation-iteration-count: infinite;
+      }
+
+      .checkbox {
+        width: 27.75px;
+        height: 27.75px;
+        border: 3px solid #6231ec;
+        border-radius: 50%;
+        margin-right: 25px;
       }
 
       .question label {
