@@ -45,6 +45,10 @@ const QuestionAnimated = () => (
         text-align: center;
         width: 330px;
         margin: 25px 0 18px 0;
+
+        animation-name: title;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
       }
 
       .question {
@@ -123,6 +127,24 @@ const QuestionAnimated = () => (
         }
         100% {
           background-color: #6231ec;
+        }
+      }
+
+      @keyframes title {
+        0% {
+          opacity: 1;
+        }
+
+        85% {
+          opacity: 1;
+        }
+
+        92.5% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
         }
       }
     `}</style>
