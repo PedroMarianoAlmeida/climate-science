@@ -4,6 +4,7 @@ const QuestionAnimated = () => (
       <h6 id="title">
         Which of the below statements about electricity is not true?
       </h6>
+
       <div id="question-wrapper">
         <div className="question">
           <input type="checkbox" />
@@ -24,7 +25,7 @@ const QuestionAnimated = () => (
     <style jsx>{`
       #container {
         width: 500px;
-        height: 351px;
+        height: 420px;
         border: 0.5px solid #6231ec;
         //filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 74px;
@@ -56,6 +57,11 @@ const QuestionAnimated = () => (
         height: 69.44px;
         box-shadow: 0px 5px 19px rgba(42, 43, 104, 0.2);
         border-radius: 69px;
+        //margin-bottom: 17.56px;
+
+        animation-name: myAnimation;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
       }
 
       .question label {
@@ -72,19 +78,15 @@ const QuestionAnimated = () => (
         justify-content: space-between;
         align-items: center;
         witdh: 100%;
-
-        animation-name: myAnimation;
-        animation-duration: 2s;
-        animation-iteration-count: infinite;
       }
 
       @keyframes myAnimation {
         from {
-          height: 500px;
+          margin: 35px 0;
         }
 
         to {
-          height: 200px;
+          margin: 7.25px 0;
         }
       }
     `}</style>
