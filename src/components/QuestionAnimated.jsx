@@ -28,6 +28,7 @@ const QuestionAnimated = () => (
         border: 0.5px solid #6231ec;
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
         border-radius: 74px;
+        overflow-y: hidden;
       }
 
       #title {
@@ -68,7 +69,6 @@ const QuestionAnimated = () => (
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        backgroundcolor: red;
         witdh: 100%;
 
         animation-name: myAnimation;
