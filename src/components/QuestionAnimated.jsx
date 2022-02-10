@@ -58,8 +58,8 @@ const QuestionAnimated = () => (
         box-shadow: 0px 5px 19px rgba(42, 43, 104, 0.2);
         border-radius: 69px;
 
-        animation-name: myAnimation;
-        animation-duration: 2s;
+        animation-name: answer-up-and-down;
+        animation-duration: 12s;
         animation-iteration-count: infinite;
       }
 
@@ -87,13 +87,21 @@ const QuestionAnimated = () => (
         witdh: 100%;
       }
 
-      @keyframes myAnimation {
-        from {
-          margin: 35px 0;
+      @keyframes answer-up-and-down {
+        0% {
+          margin: 420px 0;
         }
 
-        to {
+        32% {
           margin: 7.25px 0;
+        }
+
+        60% {
+          margin: 7.25px 0;
+        }
+
+        100% {
+          margin: 420px 0;
         }
       }
     `}</style>
