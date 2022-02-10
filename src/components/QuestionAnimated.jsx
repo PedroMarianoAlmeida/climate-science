@@ -17,7 +17,7 @@ const QuestionAnimated = () => (
         </div>
 
         <div className="question">
-          <span className="checkbox" />
+          <span className="checkbox" id="correct-answer" />
           <label>Electricity is a primary energy source</label>
         </div>
       </div>
@@ -87,6 +87,12 @@ const QuestionAnimated = () => (
         witdh: 100%;
       }
 
+      #correct-answer {
+        animation-name: correct-answer;
+        animation-duration: 12s;
+        animation-iteration-count: infinite;
+      }
+
       @keyframes answer-up-and-down {
         0% {
           margin: 420px 0;
@@ -102,6 +108,21 @@ const QuestionAnimated = () => (
 
         100% {
           margin: 420px 0;
+        }
+      }
+
+      @keyframes correct-answer {
+        0% {
+          background-color: unset;
+        }
+        50% {
+          background-color: unset;
+        }
+        51% {
+          background-color: #6231ec;
+        }
+        100% {
+          background-color: #6231ec;
         }
       }
     `}</style>
