@@ -50,14 +50,13 @@ const QuestionAnimated = () => (
       .question {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         padding: 10px 15px;
         width: 427px;
         height: 69.44px;
         box-shadow: 0px 5px 19px rgba(42, 43, 104, 0.2);
         border-radius: 69px;
-        //margin-bottom: 17.56px;
 
         animation-name: myAnimation;
         animation-duration: 2s;
@@ -69,7 +68,7 @@ const QuestionAnimated = () => (
         height: 27.75px;
         border: 3px solid #6231ec;
         border-radius: 50%;
-        margin-right: 25px;
+        margin: 0 25px 0 10px;
       }
 
       .question label {
